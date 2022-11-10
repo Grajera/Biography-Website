@@ -1,13 +1,15 @@
 <DOCTYPE html>
 <html>
+
+<head>
 <meta charset ="UTF-8">
-<title>Michael Grajera - Jobs</title>
+<title>Michael Grajera - Ordering List JS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/cube.css">
 <link rel="icon" href="images/favicon.ico">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
-
+<script src = "js/spinningCube.js"></script>
 </head>
 
 <body>
@@ -29,32 +31,27 @@
                     <a href="Calculator.html">Calculator (Extra Credit)</a>
                     <a href="Spinning_Cube_Test.html">Spinning Cube</a>
                 </div>
-                </div>
+            </div>
         </ul>
     </div>
-
-    <h1 id="protitle">Future Plans..</h1>
-    <h2 id="prosubtitle">The best is yet to come..</h2>
-    <div class="project"><img class = "invert" src="images/Time2.png" width="150" height="125"> 
-    <div class="content">
-    <hr>
-    <p id="proparagraph">I am planning on moving in the <span style="color:red"> Full Time </span> 
-        working world soon.as graduation is looming in <span style="color:aquamarine">December</span> 
-        I am looking to pin down exactly what im looking for.
-        <br><br>
-        This <span style="color:aquamarine">December</span> 
-        I am looking for Jobs in Software Engineering and Security.
-    </p>
-    </div> 
-	<div class="project">
-	</div>
+    <div class="RGB_Values">
+    <h2>Change Color</h2>
+    <input type = "range" min="0" max="255" value="255" step="1" id="R"/>
+    <input type = "range" min="0" max="255" value="255" step="1" id="G"/>
+    <input type = "range" min="0" max="255" value="255" step="1" id="B"/>
     </div>
-<hr>
+    <div id="canvas_div">
+        <script type="text/javascript">
+            loadCanvas("canvas_div");
+        </script>
+    </div>
+
+</body>
+
 <footer>
   <p>Author: Michael Grajera</p>
   <p> © 2022 </p>
 </footer>
 
-</body>
 </html>
-</DOCTYPE html>
+</DOCTYPE>

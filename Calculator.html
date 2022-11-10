@@ -1,0 +1,74 @@
+<DOCTYPE html>
+    <html>
+    
+    <head>
+    <meta charset ="UTF-8">
+    <title>Michael Grajera - Calculator JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/calculator.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
+    <script src = "js/Calculator.js"></script>
+    </head>
+    
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a style="padding: 0"href="Michael_Grajera_Bio_Start.html"><img src="images/logo.png" width="45" height="45"></a></li>
+                <li><a href="Michael_Grajera_Bio_Start.html">Home - Bio</a></li>
+                <li><a href="Michael_Grajera_Courses.html">Courses</a></li>
+                <li><a href="Michael_Grajera_Hobbies.html">Hobbies</a></li>
+                <li><a href="Michael_Grajera_Jobs.html">Jobs</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">JavaScript Projects
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Future_Value_Calculator.html">Future Value Calculator - From Slides</a>
+                        <a href="Future_Value_Calculator_My_Way.html">Future Value Calculator - Updated</a>
+                        <a href="Ordering.html">Ordering</a>
+                        <a href="Calculator.html">Calculator (Extra Credit)</a>
+                        <a href="Spinning_Cube_Test.html">Spinning Cube</a>
+                    </div>
+                    </div>
+            </ul>
+        </div>
+    
+        <h1 id="protitle">Calculator</h1>
+        <h2 id="prosubsubtitle">A JavaScript Application</h2>
+            <hr>
+
+            <div class="main-div"> <!-- Main Calculator Div -->
+                <div class="screen" id="screen"><p></p></div> <!-- Screen Div - this is actually the screen -->
+                <div class="clear_data" id="clear_data">C</div> <!-- runs clear_data() javascript when pressed-->
+                <div class="sNotation" id="sNotation">Scientific Notation</div><!-- runs sNotation() javascript when pressed-->
+                   <ul class="numbers">     <!-- Number pad configuration its a 4x4 grid -->
+                        <li>7</li> <li>8</li> <li>9</li> <li>÷</li>
+                        <li>4</li> <li>5</li> <li>6</li> <li>x</li>
+                        <li>1</li> <li>2</li> <li>3</li> <li>-</li>
+                        <li>.</li> <li>0</li> <li>%</li> <li>+</li>
+
+                        <!-- This is the bottom button clicking these makes the javascript
+                             functions flipFlop() and Calculate()                         -->
+
+                        <li id="flipFlop">+/-</li>  <li id="equals">=</li>
+                   </ul>
+
+            </div>
+        <h2 id="prosubtitle"><span style="color:yellow; text-decoration: underline; font-weight: bold;">Hint:</span> Press 
+            <span style="color:white; border: 5px solid red; background-color: red; font-weight: bold;">C</span> To Clear Your Screen!</h2>
+        <div class="project">
+        </div>
+        </div>
+    <hr>
+    <footer>
+      <p>Author: Michael Grajera</p>
+      <p> © 2022 </p>
+      <a href="mailto:mdgrajera@gmail.com"> Click Here Report a Bug! </a>
+    </footer>
+    
+    </body>
+    </html>
+    </DOCTYPE>

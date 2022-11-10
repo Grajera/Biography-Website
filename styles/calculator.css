@@ -1,0 +1,172 @@
+/*Calculator CSS*/
+
+html,body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	font-family: 'Noto Serif', serif;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+.main-div{
+	width:320px;
+	margin:0 auto;
+	background:#2e2929;
+	height:460px;
+	box-shadow:2px 2px 2px rgb(7, 7, 7);
+	padding:15px;
+	font: bolder 14px Arial, sans-serif;
+	border-bottom:10px solid #080707;
+    border-radius:10px;	
+    position:relative;	 
+	
+}
+
+/*Calculator Sreen*/
+
+.screen-div,.number-div{
+	  padding:0;
+	  margin:0;
+}
+
+.screen{
+	list-style:none;
+	color:rgb(0, 0, 0);
+	height:45px;
+	width:80px;
+    font-size: 25px;
+    margin-left:8px;
+	border-radius:4px;
+	border-top:5px solid #ffffff;
+	text-align:center;
+	font-weight:bold;
+	font-family: 'Ubuntu', sans-serif;
+	margin-bottom:8px;
+    width:255px;
+	background:#fbfbfb;
+    border-top:5px solid #000000;
+    overflow:hidden;
+}
+.screen p{
+    margin: 0;
+  }
+
+/*Clear Data Button - C*/
+
+.clear_data{
+    width:60px;
+	background:#ff0000;
+	padding:10px 17px;
+	position:absolute;
+    border-bottom:4px solid #000000;
+	border-radius:3px;
+	left:20px;
+	top: 80px;
+	color:white;
+	cursor:pointer;
+	text-align:center;
+}
+
+.clear_data:hover{
+    width:60px;
+	background:#ffffff;
+	padding:10px 17px;
+	position:absolute;
+	border-radius:3px;
+	left:20px;
+	top: 80px;
+	color:rgb(4, 3, 3);
+	cursor:pointer;
+	text-align:center;
+}
+
+/*Scientific Notation Button*/
+
+.sNotation{
+    width:180px;
+	background:#ff0000;
+	padding:10px 17px;
+	position:absolute;
+    border-bottom:4px solid #000000;
+	border-radius:3px;
+	left:108px;
+	top: 80px;
+	color:white;
+	cursor:pointer;
+	text-align:center;
+}
+.sNotation:hover{
+    width:180px;
+	background:#ffffff;
+	padding:10px 17px;
+	position:absolute;
+	border-radius:3px;
+	left:108px;
+	top: 80px;
+	color:rgb(4, 3, 3);
+	cursor:pointer;
+	text-align:center;
+}
+
+/*Number Pad on Calculator*/
+
+.numbers
+{
+    margin:70px 0px;
+}
+
+.numbers li{
+	list-style:none;
+    font-size: 14px;
+	font-weight: bolder;
+	float:left;
+    width:60px;
+    background:white;
+	margin:9px 5px;
+	padding:10px;
+	border-bottom:4px solid #000000;
+	border-radius:5px;
+	color:#000000;
+	text-align:center;
+	transition:.2s;
+	cursor:pointer;
+}
+
+.numbers li:hover{
+	background: #000000;
+	border-bottom: 4px solid #f2f2f4;
+	color: white;
+}
+
+/*Equals Button -> = */
+#equals{
+	background:#ffa600;
+	color:rgb(6, 6, 6);
+    width: 130px;
+}
+
+#equals:hover{
+	background: #f83c49;
+	border-bottom: 4px solid #B3232E;
+	color: white;
+    width: 130px;
+}
+
+/*Fraction Button -> % */
+#flipFlop{
+	background:#ffa600;
+	color:rgb(6, 6, 6);
+    width: 130px;
+}
+
+#flipFlop:hover{
+	background: #f83c49;
+	border-bottom: 4px solid #B3232E;
+	color: white;
+    width: 130px;
+}
+

@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html>
 
-    <meta charset ="UTF-8">
+<meta charset ="UTF-8">
 
 <title>Michael Grajera - Courses</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,22 @@
 <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
 
 </head>
+<style>
+	::content {
+        animation:animatezoom 0.6s
+    }
+    @keyframes animatezoom
+    {
+        rom
+        {
+            transform:scale(0)
+        } 
+        to
+        {
+            transform:scale(1)
+        }
+    }
+</style>
 
 <body>
     <div class="nav">
@@ -20,22 +36,42 @@
 			<li><a href="Michael_Grajera_Courses.html">Courses</a></li>
 			<li><a href="Michael_Grajera_Hobbies.html">Hobbies</a></li>
 			<li><a href="Michael_Grajera_Jobs.html">Jobs</a></li>
+			<div class="dropdown">
+                <button class="dropbtn">JavaScript Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Future_Value_Calculator.html">Future Value Calculator - From Slides</a>
+                    <a href="Future_Value_Calculator_My_Way.html">Future Value Calculator - Updated</a>
+                    <a href="Ordering.html">Ordering</a>
+                    <a href="Calculator.html">Calculator (Extra Credit)</a>
+                    <a href="Spinning_Cube_Test.html">Spinning Cube</a>
+                </div>
+                </div>
         </ul>
     </div>
 
     <h1 id="protitle">My Courses</h1>
-    <p id="prosubtitle">These are the courses I am <b>currently</b> taking at Texas A&M.</p>
+    <p id="prosubtitle">These are the courses I am <u>currently</u> taking at Texas A&M.</p>
     <div class="project"><img src="images/TAMUCC.png" width="200" height="150">  
     <div class="content">
     <hr>
     </div> 
 	<div class="project">
-	
-		<li>Internet Programming - COSC 3351</li>
-		<li>Human-computer Interaction - COSC 3360</li>
-		<li>Introduction to Artificial Intelligence - COSC 4330</li>
-		<li>Algorithms - COSC 4343</li>
-		<li>Senior Capstone Project - COSC 4354</li>
+		<li>Internet Programming - COSC 3351 - Midterm Grade: 
+        <span style ="color: green;">A</span></li>
+
+		<li>Human-computer Interaction - COSC 3360 - Midterm Grade: 
+        <span style ="color: rgb(255, 251, 0);">B</span></li>
+
+		<li>Introduction to Artificial Intelligence - COSC 4330 - Midterm Grade: 
+        <span style ="color: green;">A</span></li>
+
+		<li>Algorithms - COSC 4343 - Midterm Grade: 
+        <span style ="color: green;">A</span></li>
+
+		<li>Senior Capstone Project - COSC 4354 - Midterm Grade: 
+        <span style ="color: green;">A</span></li>
 	</div>
     </div>
 

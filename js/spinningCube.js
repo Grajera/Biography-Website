@@ -6,7 +6,10 @@ function loadCanvas(id) {
     var R = document.getElementById("R").value;
     var G = document.getElementById("G").value;
     var B = document.getElementById("B").value;
-    
+    var size_tag = document.getElementById("Size")
+    var Size = document.getElementById("Size").value;
+    var canvas_size_tag = document.getElementById("Canvas_Size_var")
+    var Canvas_Size_var = document.getElementById("Canvas_Size_var").value;
     
 
     const SPEED_X = 0.10; // rps
@@ -23,11 +26,11 @@ function loadCanvas(id) {
     
     
     // dimensions
-    var h = 500;
-    var w = 500;
+    var h = Canvas_Size_var;
+    var w = Canvas_Size_var;
     canvas.height = h;
     canvas.width = w;
-    //color sliders
+    //color and size sliders on change commands
 
     r_tag.oninput = function()
     {
@@ -44,11 +47,21 @@ function loadCanvas(id) {
         div.removeChild(canvas);
         loadCanvas(id);
     }
+    size_tag.oninput = function()
+    {
+        div.removeChild(canvas);
+        loadCanvas(id);
+    }
+    canvas_size_tag.oninput = function()
+    {
+        div.removeChild(canvas);
+        loadCanvas(id);
+    }
 
     // colours and lines
     ctx.fillStyle = "black"
     ctx.strokeStyle = `rgb(${R}, ${G},${B})`;
-    ctx.lineWidth = w / 300;
+    ctx.lineWidth = w / Size;
     ctx.lineCap = "round";
 
     // cube parameters
